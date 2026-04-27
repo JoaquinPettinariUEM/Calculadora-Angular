@@ -1,0 +1,90 @@
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .calculator {
+    position: relative;
+    height: 500px;
+    width: 300px;
+  }
+
+  .calculator-image {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+  }
+
+  .button-operation {
+    cursor: pointer;
+    background-color: orange;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+  }
+
+  .button-operation:hover {
+    filter: brightness(1.1);
+  }
+
+  .button-operation:active {
+    transform: scale(0.95);
+  }
+
+  .equals {
+    grid-column: span 2;
+  }
+
+  .display {
+    z-index: 100;
+    top: 150px;
+    position: absolute;
+    width: 100%;
+    padding: 0 60px;
+    text-align: end;
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .buttons {
+    z-index: 100;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .button:hover {
+    filter: brightness(0.9);
+  }
+
+  .button:active {
+    transform: scale(0.95);
+  }
+}
